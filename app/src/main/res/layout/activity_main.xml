@@ -7,21 +7,66 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Título -->
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Iniciar sesión"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp" />
 
+    <!-- Email -->
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="30dp" />
+
+    <!-- Contraseña -->
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="@id/editTextTextEmailAddress"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextEmailAddress"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botón Iniciar sesión -->
     <Button
         android:id="@+id/B1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Inicio"
-        tools:layout_editor_absoluteX="168dp"
-        tools:layout_editor_absoluteY="493dp" />
+        android:text="Iniciar sesión"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextPassword"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón Google -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Iniciar con Google"
+        android:backgroundTint="#8CBF90"
+        app:layout_constraintTop_toBottomOf="@id/B1"
+        app:layout_constraintStart_toStartOf="@id/B1"
+        app:layout_constraintEnd_toEndOf="@id/B1"
+        android:layout_marginTop="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
