@@ -1,7 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("androidx.navigation.safeargs.kotlin")
+
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -50,6 +51,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
+    implementation("com.google.firebase:firebase-analytics")
 
     // ✅ Jetpack Navigation Component
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
