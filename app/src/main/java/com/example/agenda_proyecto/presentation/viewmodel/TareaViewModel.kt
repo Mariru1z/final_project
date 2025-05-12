@@ -8,6 +8,8 @@ import com.example.agenda_proyecto.utils.UIState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.collectLatest
 
 class TareaViewModel(
     private val obtenerTareasUseCase: ObtenerTareasUseCase
@@ -18,12 +20,14 @@ class TareaViewModel(
 
     fun obtenerTareas() {
         viewModelScope.launch {
-            try {
-                val tareas = obtenerTareasUseCase()
-                _uiState.value = UIState.Success(tareas)
-            } catch (e: Exception) {
-                _uiState.value = UIState.Error("Error al cargar tareas")
-            }
+            obtenerTareasUseCase()
+                .catch { e ->
+                    _uiState.value = UIState.Error("Error al cargar tareas: ${e.message}")
+                }
+                .collectLatest { tareas ->
+                    _uiState.value = UIState.Success(tareas)
+                }
         }
     }
 }
+

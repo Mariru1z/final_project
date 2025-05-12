@@ -1,35 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/listaTareasFragment">
 
     <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.example.simpleagenda.ui.login.LoginFragment"
-        android:label="Login">
-        <action
-            android:id="@+id/action_loginFragment_to_homeFragment"
-            app:destination="@id/homeFragment"/>
-    </fragment>
+        android:id="@+id/listaTareasFragment"
+        android:name="com.example.agenda_proyecto.presentation.ListaTareasFragment"
+        android:label="Lista de Tareas"
+        tools:layout="@layout/fragment_lista_tareas" />
 
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.simpleagenda.ui.home.HomeFragment"
-        android:label="Home">
-        <action
-            android:id="@+id/action_homeFragment_to_taskDetailFragment"
-            app:destination="@id/taskDetailFragment"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/taskDetailFragment"
-        android:name="com.example.simpleagenda.ui.task.TaskDetailFragment"
-        android:label="Detalle"/>
-
-    <fragment
-        android:id="@+id/settingsFragment"
-        android:name="com.example.simpleagenda.ui.settings.SettingsFragment"
-        android:label="Configuración" />
-    
 </navigation>
+
