@@ -1,4 +1,4 @@
-package com.example.simpleagenda.notification
+package com.example.agenda_proyecto.agenda_proyecto.notification
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -7,8 +7,8 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
-import com.example.simpleagenda.R
-import com.example.simpleagenda.ui.MainActivity
+import com.example.agenda_proyecto.R
+import com.example.agenda_proyecto.MainActivity
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 
