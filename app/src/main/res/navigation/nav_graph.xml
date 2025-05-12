@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listaTareasFragment">
+
+    <fragment
+        android:id="@+id/listaTareasFragment"
+        android:name="com.example.agenda_proyecto.presentation.ListaTareasFragment"
+        android:label="Lista de Tareas"
+        tools:layout="@layout/fragment_lista_tareas" />
+
+</navigation>
+
