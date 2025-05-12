@@ -1,4 +1,8 @@
 pluginManagement {
+    plugins {
+        id("androidx.navigation.safeargs.kotlin") version "2.7.7" apply false
+    }
+
     repositories {
         google {
             content {
@@ -11,6 +15,7 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -21,4 +26,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Agenda_proyecto"
 include(":app")
- 

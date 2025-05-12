@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "906674857593",
+    "project_id": "simpleagenda-8c473",
+    "storage_bucket": "simpleagenda-8c473.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906674857593:android:625d7c36ab2f662ddb16a8",
+        "android_client_info": {
+          "package_name": "com.example.agenda_proyecto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3C7Hgi-T-7gebpvrWA3q4tRa1kw5ceEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
