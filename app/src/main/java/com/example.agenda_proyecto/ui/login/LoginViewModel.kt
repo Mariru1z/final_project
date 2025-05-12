@@ -1,4 +1,4 @@
-package com.example.simpleagenda.ui.login
+package com.example.agenda_proyecto.agenda_proyecto.ui.login
 
 import androidx.lifecycle.ViewModel
 import com.google.firebase.auth.FirebaseAuth
