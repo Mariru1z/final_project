@@ -1,4 +1,4 @@
-package com.example.simpleagenda.preferences
+package com.example.agenda_proyecto.preferences
 
 import android.content.Context
 import androidx.datastore.preferences.core.edit

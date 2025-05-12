@@ -1,4 +1,4 @@
-package com.example.simpleagenda.model
+package com.example.agenda_proyecto.agenda_proyecto.model
 
 data class Task(
     val id: Int = 0,
