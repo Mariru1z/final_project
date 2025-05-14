@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/grupo_uno"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/op_inicio"
+            android:title="@string/op_inicio"
+            android:icon="@drawable/ic_inicio"
+
+            />
+
+        <item
+            android:id="@+id/op_cuentas"
+            android:title="@string/op_cuenta"
+            android:icon="@drawable/ic_mi_cuenta"
+            />
+
+        <item
+            android:id="@+id/op_ajustes"
+            android:title="@string/op_ajustes"
+            android:icon="@drawable/ic_ajustes"
+            />
+
+
+    </group>
+    <item
+        android:id="@+id/op_salir"
+        android:title="@string/op_salir"
+        android:icon="@drawable/ic_salir"
+        />
+
+</menu>

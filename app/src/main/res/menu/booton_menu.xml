@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_tareas"
+        android:title="@string/item_tareas"
+        android:icon="@drawable/ic_mis_tareas"
+        />
+    <item
+        android:id="@+id/fab"
+        android:title=""
+        android:enabled="false"
+        />
+    <item
+        android:id="@+id/item_contactos"
+        android:title="@string/item_contactos"
+        android:icon="@drawable/ic_mis_contactos"
+        />
+</menu>

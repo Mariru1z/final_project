@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AgendaOnline</string>
+
+    <string name="op_inicio">Inicio</string>
+    <string name="op_cuenta">Mi cuenta</string>
+    <string name="op_ajustes">Ajustes</string>
+    <string name="op_salir">Salir</string>
+
+    <string name="item_tareas">Mis tareas</string>
+    <string name="item_contactos">Mis contactos</string>
+
+    <string name="txt_bienvenida">Bienvenido</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
